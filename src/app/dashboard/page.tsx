@@ -56,7 +56,7 @@ export default function Dashboard() {
                                 <a className='text-black/80 font-semibold hover:text-black/70 transition-all'
                                     href={file.publicUrl}
                                     download>
-                                    Download PDF
+                                    Завантажити PDF
                                 </a>
                                 <BiDownload className="text-2xl text-green-500/50" />
                             </div>
@@ -64,7 +64,7 @@ export default function Dashboard() {
                                 href={file.publicUrl}
                                 target="_blank"
                                 rel="noopener noreferrer">
-                                Open PDF
+                                Відкрити PDF
                             </a>
                         </div>
                     </div>
