@@ -43,7 +43,8 @@ export default function Dashboard() {
                 <Navbar />
                 <h1 className="text-3xl font-bold">Список ваших файлів: </h1>
                 {fileUrls.map((file, index) => (
-                    <div className="p-4 border-[.5px] border-black/20 rounded-xl flex gap-4">
+                    <div key={index} 
+                    className="p-4 border-[.5px] border-black/20 rounded-xl flex gap-4">
                         <div className="flex gap-2">
                             <FiLink className="text-2xl text-black/70" />
                             <p>
