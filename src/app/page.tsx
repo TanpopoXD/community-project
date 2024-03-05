@@ -1,5 +1,4 @@
 import { AuthModal } from "@/components/auth-modal/AuthModal";
-import Image from "next/image";
 
 export default function Home() {
   return (

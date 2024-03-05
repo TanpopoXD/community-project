@@ -32,9 +32,13 @@ export const AuthModal = () => {
         <div>
             <Modal
                 title=""
-                description={`"Державна установа "ДЗОВ Водограй"`}
+                description={`"Державна установа" ДЗОВ Водограй"`}
                 isOpen={isOpen}
                 onChange={onChange}>
+                <style jsx global>{`
+                    .supabase-auth-ui_ui-anchor {
+                    display: none;
+                }`}</style>
                 <Auth
                     theme="dark"
                     magicLink={false}
@@ -49,34 +53,34 @@ export const AuthModal = () => {
                                 }
                             }
                         }
-                    }
-                    }
+                    }}
                     localization={{
                         variables: {
                             sign_in: {
-                                email_label: 'Електронна пошта',
-                                password_label: 'Пароль',
+                                email_label: '',
+                                password_label: '',
                                 button_label: 'Увійти',
-                                email_input_placeholder: 'Введіть вашу електронну пошту',
+                                email_input_placeholder: 'Електронна пошта',
                                 password_input_placeholder: 'Введіть ваш пароль',
                                 loading_button_label: 'Зачекайте...',
-                                link_text: 'Вже маєте акаунт? Увійти'
+                                link_text: '',
+                                social_provider_text: '',
                             },
                             sign_up: {
-                                email_label: 'Електронна пошта',
-                                password_label: 'Пароль',
+                                email_label: '',
+                                password_label: '',
                                 button_label: 'Зареєструватися',
-                                email_input_placeholder: 'Введіть вашу електронну пошту',
+                                email_input_placeholder: 'Електронна пошта',
                                 password_input_placeholder: 'Введіть ваш пароль',
                                 loading_button_label: 'Зачекайте...',
-                                link_text: 'Вже маєте акаунт? Увійти',
-                                confirmation_text: 'Ви отримаєте лист на вашу електронну пошту з посиланням для підтвердження'
+                                link_text: '',
+                                confirmation_text: '',
+                                social_provider_text: '',
                             }
                         },
                     }}
                 />
             </Modal>
         </div>
-
     )
 }
